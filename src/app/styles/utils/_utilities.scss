@@ -1,0 +1,115 @@
+.wrapper {
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 960px;
+    }
+
+    &.row {
+        @media only screen and (min-width: 767px) {
+            flex-direction: row;
+        }
+    }
+
+    &.inline-narrow {
+        margin: 0 55.2px;
+    }
+
+    &.inline-wide {
+        margin: 0 24.4px;
+    }
+
+    &.inline-narrow {
+        margin: 0 12.2px;
+    }
+
+    &.block-narrow {
+        padding: 58px 0;
+    }
+}
+
+.material-symbols-outlined {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    position: relative;
+
+    &.ultra-small {
+        @media only screen and (max-width: 767px) {
+            top: 1.2px;
+            left: 1px;
+            width: 9px;
+        }
+
+        @media only screen and (max-width: 767px) {
+
+        }
+    }
+
+    &.small {
+        @media only screen and (max-width: 767px) {
+            top: 2px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            top: 2px;
+        }
+    }
+
+    &.medium {
+        @media only screen and (max-width: 767px) {
+            top: 2.6px;
+            right: 3px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            top: 2.6px;
+            right: 3px;
+        }
+    }
+
+    &.special {
+        @media only screen and (max-width: 767px) {
+            top: 3.5px;
+            right: 3px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            top: 3px;
+            right: 3px;
+        }
+    }
+
+    &.normall {
+        @media only screen and (max-width: 767px) {
+            top: 4px;
+            right: 4px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            top: 7px;
+            right: 7px;
+        }
+    }
+}
+
+.page-section {
+    display: flex;
+    flex-direction: column;
+
+    &.block-narrow {
+        padding: 90px 0;
+    }
+
+    &.block-wide {
+        padding: 45px 0;
+    }
+}
+
+.grey-bg {
+    background-color: var(--r-calm-grey-bg-color);
+}  
+
+.mango-copy {
+    color: var(--r-main-btn-color);
+}

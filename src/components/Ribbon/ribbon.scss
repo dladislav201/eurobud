@@ -1,0 +1,30 @@
+.sale-container {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--r-calm-grey-bg-color);
+    color: var(--r-main-txt-light-theme-color);
+    animation: saleContainerSlide .6s ease-in-out 0.5s both;
+
+    @media only screen and (min-width: 768px) {
+        padding: 13px 55.2px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 18px 55.2px;
+    }
+}
+
+.sale-container-text {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.26;
+    letter-spacing: -.016em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sale-test-link {
+    color: var(--r-main-link-color);
+    text-decoration: none;
+    white-space: nowrap;
+}

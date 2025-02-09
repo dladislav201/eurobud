@@ -1,0 +1,43 @@
+.contact-page-container {
+    .user-box {
+        @media only screen and (min-width: 768px) {
+            position: relative;
+            width: 340px;
+            height: fit-content;
+            border-radius: 12px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            position: relative;
+            width: 340px;
+            height: fit-content;
+            border-radius: 12px;
+        }
+
+        &.error {
+            .contact-input {
+                background-color: #fff2f4;
+            }
+
+            .contact-input-label {
+                color: #e30000;
+            }
+
+            &:focus,
+            &:valid {
+                & ~ .input-label {
+                    @media only screen and (min-width: 768px) {
+                        color: #e30000;
+                    }
+                }
+            }
+        }
+    }
+
+    .error-msg {
+        display: none;
+        margin: 5px 0 0;
+        font-size: 13px;
+        color: #e30000;
+    }
+}

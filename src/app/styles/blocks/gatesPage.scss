@@ -1,0 +1,32 @@
+.sale-wrapper {
+    width: fit-content;
+    white-space: nowrap;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 215, 194, .72);
+    border-radius: 8px;
+    margin: 0 auto 18px;
+
+    @media only screen and (min-width: 768px) {
+
+    }
+
+    @media only screen and (max-width: 767px) {
+
+    }
+}
+
+.sale-eyebrow {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--r-main-btn-color);
+    text-transform: uppercase;
+
+    @media only screen and (min-width: 768px) {
+
+    }
+
+    @media only screen and (max-width: 767px) {
+
+    }
+}

@@ -1,0 +1,66 @@
+@keyframes autoFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes manualMoveIn {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes autoMoveIn {
+    0% {
+        transform: translateY(20px);  
+    }
+    100% {
+        transform: translateY(0);
+    } 
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+} 
+
+@keyframes saleContainerSlide {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+} 
+
+@keyframes saleContainerSlide {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

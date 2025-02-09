@@ -1,0 +1,59 @@
+.home-page-colection {
+    display: flex;
+    flex-direction: column;
+
+    .page-section {
+        border-bottom: 1px solid #d2d2d7;
+        text-align: center;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        padding: 0 0 45px;
+        gap: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 0 0 12px;
+        gap: 12px;
+    }
+
+    .media-wrapper {
+        overflow: hidden;
+        position: relative;
+        display: flex;  
+
+        @media only screen and (min-width: 768px) {
+            height: 520px;
+            width: 1050px;
+            margin: 72px auto 58px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            height: 240px;
+            margin: 52px 0 44px;
+        }
+
+        .media {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .product-link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .btn-groove {
+        margin-top: 44px;
+    }
+}

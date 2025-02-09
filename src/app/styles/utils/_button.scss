@@ -1,0 +1,107 @@
+.btn {
+    border: none;
+    outline: none;
+    white-space: nowrap;
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn-main {
+    background-color: var(--r-main-btn-color);
+    color: var(--r-main-txt-dark-theme-color);
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--r-main-btn-hover-color);
+        }
+
+        &:active {
+            
+        }
+    }
+
+    @media (hover: none) {
+        &:active {
+            background-color: var(--r-main-btn-hover-color);
+        }
+    }
+}
+
+.btn-secondary {
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03);
+    color: rgba(49, 49, 53, 0.82);
+}
+
+.btn-small {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    border-radius: 32px;
+    padding: 12px 21px;
+    min-height: 40px;
+}
+
+.btn-play {
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    pointer-events: all;
+    width: 40px;
+    height: 40px;
+
+    &.play {
+        &::after {
+            -webkit-mask: url('/img/video-play-icon.svg');
+            mask: url('/img/video-play-icon.svg');
+        }
+    }
+
+    &::after {
+        content: "";
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-size: 20px 20px;
+        background-color: rgba(49, 49, 53, 0.82);
+    }
+
+    &::after {
+        -webkit-mask: url(/img/video-pause-icon.svg);
+        mask: url(/img/video-pause-icon.svg);
+    }
+}
+
+.btn-chevron {
+    align-items: center;
+    border: none;
+    border-radius: 36px;
+    display: flex;
+    font-style: normal;
+    height: 40px;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    transition: opacity .4s ease;
+    width: 40px;
+    background-color: #d2d2db;
+    color: rgba(30,30,31,.48);
+
+    &:disabled {
+        opacity: .4;
+    }
+
+    svg {
+        height: 100%;
+        pointer-events: none;
+        width: 100%;
+        fill: currentColor;
+    }
+}
