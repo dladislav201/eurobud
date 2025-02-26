@@ -97,7 +97,7 @@ export const ProductGallery = ({ automaticModels }: ProductGalleryProps) => {
   return (
     <>
       <div className="product-gallery">
-        <animated.ul
+        {/* <animated.ul
           {...bind()}
           className="gallery-items-container"
           style={{
@@ -144,7 +144,7 @@ export const ProductGallery = ({ automaticModels }: ProductGalleryProps) => {
               </div>
             </li>
           ))}
-        </animated.ul>
+        </animated.ul> */}
         <AnimatePresence>
           {activeCharacteristicIndex !== null && (
             <AutomaticCharacteristic

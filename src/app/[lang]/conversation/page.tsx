@@ -8,7 +8,8 @@ export default function Conversation() {
           <div className="headline-container">
             <div className="wrapper inline-narrow">
               <h1 className="contact-page-title">
-                Давайте разом знайдемо індивідуальне рішення для вашого об'єкту.
+                Давайте разом знайдемо індивідуальне рішення для вашого
+                об&apos;єкту.
               </h1>
               <p className="contact-page-info">
                 Перш ніж ми зможемо почати, вкажіть контактні данні. Менеджер
@@ -28,10 +29,12 @@ export default function Conversation() {
                   data-valid
                   required
                 />
-                <label className="input-label contact-input-label">Ім'я</label>
+                <label className="input-label contact-input-label">
+                  Ім&apos;я
+                </label>
                 <p className="error-msg">
                   <span className="material-symbols-outlined">error</span>
-                  Будь ласка, введіть своє Ім'я.
+                  Будь ласка, введіть своє Ім&apos;я.
                 </p>
               </div>
               <div className="user-box" data-valid-parent>

@@ -86,7 +86,7 @@ export default function Swing() {
             <p className="description average">
               Ви можете самостійно вибрати матеріал для заповнення воріт, а
               також колір для фарбування конструкцій, щоб зберегти гармонію в
-              вашому існуючому інтер'єрі.
+              вашому існуючому інтер&apos;єрі.
             </p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function Swing() {
           <div className="slide-container">
             <p className="description average">
               Керуйте воротами, просто натискаючи кнопку на пульті. Відкривайте
-              та закривайте в'їзні ворота, навіть не виходячи з авто.
+              та закривайте в&apos;їзні ворота, навіть не виходячи з авто.
             </p>
             <Link className="second-link average black" href="/automatic">
               Більше про автоматику

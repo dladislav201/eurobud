@@ -24,7 +24,7 @@ export default function Barrier() {
             Забезпечуйте безпеку свого паркувального місця, зберігайте
             конфіденційність місць загального користування, контролюйте вхід і
             вихід з обмежених зон за допомогою елегантно спроектованих дорожніх
-            бар'єрів, що поєднують продуктивність і довговічність продукту,
+            бар&apos;єрів, що поєднують продуктивність і довговічність продукту,
             навіть у зонах з інтенсивним рухом транспорту.
           </p>
           <div className="barrier-main-btn-container">
@@ -129,7 +129,7 @@ export default function Barrier() {
         <div className="wrapper inline-wide">
           <h1 className="contact-title">Як замовити</h1>
           <p className="contact-undtitle">
-            Ми тут щоб знайти найкраще рішення для вас та вашого об'єкту.
+            Ми тут щоб знайти найкраще рішення для вас та вашого об&apos;єкту.
           </p>
           <Link className="contact-btn-onpage" href="/conversation">
             Розпочати
@@ -192,7 +192,7 @@ export default function Barrier() {
                         <h1 className="carousel-open-card-title">Будь-який діапазон.</h1>
                         <p className="barrier-open-card-undtitle">
                             Незалежно від розміру вашого проєму, ми маємо ідеальне рішення. Стрижні шириною від трьох до 
-                            дев'яти метрів, які також доступні в протилежних версіях, які можуть працювати синхронно,  щоб 
+                            дев&apos;яти метрів, які також доступні в протилежних версіях, які можуть працювати синхронно,  щоб 
                             ще більше збільшити діапазон функціонування.
                         </p>
                         <button className="round-button big carousel-open-card-btn"  data-container="three">
@@ -209,7 +209,7 @@ export default function Barrier() {
                         <h1 className="carousel-open-card-title">Повний контроль.</h1>
                         <p className="barrier-open-card-undtitle">
                             Незалежно від розміру вашого проєму, ми маємо ідеальне рішення. Стрижні шириною від трьох до 
-                            дев'яти метрів, які також доступні в протилежних версіях, які можуть працювати синхронно,  щоб 
+                            дев&apos;яти метрів, які також доступні в протилежних версіях, які можуть працювати синхронно,  щоб 
                             ще більше збільшити діапазон функціонування.
                         </p>
                         <button className="round-button big carousel-open-card-btn"  data-container="three">

@@ -258,7 +258,7 @@ export default function Garage() {
           <div className="slide-container">
             <p className="description average">
               Керуйте воротами, просто натискаючи кнопку на пульті. Відкривайте
-              та закривайте в'їзні ворота, навіть не виходячи з авто.
+              та закривайте в&apos;їзні ворота, навіть не виходячи з авто.
             </p>
             <Link className="second-link average black" href="/automatic">
               Більше про автоматику

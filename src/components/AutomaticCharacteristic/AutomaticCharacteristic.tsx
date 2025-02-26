@@ -146,7 +146,7 @@ export const AutomaticCharacteristic = ({
             </div>
             <div className="product-card-gallery-container">
               <div className="product-card-gallery">
-                <animated.ul
+                {/* <animated.ul
                   {...bind()}
                   className="product-card-gallery-items"
                   style={{
@@ -168,7 +168,7 @@ export const AutomaticCharacteristic = ({
                       </div>
                     </li>
                   ))}
-                </animated.ul>
+                </animated.ul> */}
               </div>
               {automaticModel.productGalleryImages.length > 1 && (
                 <div className="dotnav-wrapper">

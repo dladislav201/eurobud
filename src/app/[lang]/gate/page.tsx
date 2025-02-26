@@ -70,7 +70,7 @@ export default function Gate() {
           <div className="wrapper inline-narrow float-right">
             <p className="description small">
               Класичне рішення, яке поєднує в собі елегантність та надійність.
-              Чудове доповнення до вашого екстер'єру.
+              Чудове доповнення до вашого екстер&apos;єру.
             </p>
           </div>
           <div className="btn-groove">
@@ -111,7 +111,7 @@ export default function Gate() {
           <div className="slide-container">
             <p className="description average">
               Керуйте воротами, просто натискаючи кнопку на пульті. Відкривайте
-              та закривайте в'їзні ворота, навіть не виходячи з авто.
+              та закривайте в&apos;їзні ворота, навіть не виходячи з авто.
             </p>
             <Link className="second-link average black" href="/automatic">
               Більше про автоматику

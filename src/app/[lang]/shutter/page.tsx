@@ -39,7 +39,7 @@ export default function Shutter() {
         <div className="wrapper inline-wide">
           <h1 className="contact-title">Як замовити</h1>
           <p className="contact-undtitle">
-            Ми тут щоб знайти найкраще рішення для вас та вашого об'єкту.
+            Ми тут щоб знайти найкраще рішення для вас та вашого об&apos;єкту.
           </p>
           <Link className="contact-btn-onpage" href="/conversation">
             Розпочати

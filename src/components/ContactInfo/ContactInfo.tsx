@@ -8,7 +8,7 @@ export const ContactInfo = () => {
           <img className="icon" src="/img/support-order.png" />
           <p className="description average">
             <span className="dark-span">Як замовити?</span>
-            Ми тут щоб знайти найкраще рішення для вас та вашого об'єкту.
+            Ми тут щоб знайти найкраще рішення для вас та вашого об&apos;єкту.
           </p>
           <Link className="product-support-link" href="/conversation">
             Розпочати

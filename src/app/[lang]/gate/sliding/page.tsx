@@ -63,7 +63,7 @@ export default function Sliding() {
           <div className="wrapper inline-narrow">
             <div className="float-right">
               <h1 className="headline medium">
-                Вільний простір перед в'їздом.
+                Вільний простір перед в&apos;їздом.
               </h1>
             </div>
             <div className="media-wrapper">
@@ -75,7 +75,7 @@ export default function Sliding() {
             <div className="float-right">
               <p className="description average">
                 При відкритті, стулка воріт зсувається вздовж паркану і не
-                займає місце перед в'їздом на ділянку.
+                займає місце перед в&apos;їздом на ділянку.
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function Sliding() {
             <p className="description average">
               Ви можете самостійно вибрати матеріал для заповнення воріт, а
               також колір для фарбування конструкцій, щоб зберегти гармонію в
-              вашому існуючому інтер'єрі.
+              вашому існуючому інтер&apos;єрі.
             </p>
           </div>
         </div>
@@ -142,7 +142,7 @@ export default function Sliding() {
           <div className="slide-container">
             <p className="description average">
               Керуйте воротами, просто натискаючи кнопку на пульті. Відкривайте
-              та закривайте в'їзні ворота, навіть не виходячи з авто.
+              та закривайте в&apos;їзні ворота, навіть не виходячи з авто.
             </p>
             <Link className="second-link average black" href="/automatic">
               Більше про автоматику
