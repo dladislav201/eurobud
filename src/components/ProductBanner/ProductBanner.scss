@@ -1,0 +1,37 @@
+.product-banner {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.product-banner-title {
+    font-weight: 600;
+    letter-spacing: -.04em;
+    transform: translateY(35px);
+    animation: autoFadeIn .7s cubic-bezier(0.455,0.030,0.515,0.955) both, manualMoveIn .7s cubic-bezier(0.455,0.030,0.515,0.955) forwards;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 68px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 44px;        
+    }
+}
+
+.product-banner-slogan {
+    font-weight: 400;
+    margin: 14px 0 0;
+    transform: translateY(25px);
+    opacity: 0;
+    animation: autoFadeIn .7s cubic-bezier(0.455,0.030,0.515,0.955) both, manualMoveIn .7s cubic-bezier(0.455,0.030,0.515,0.955) 0.15s forwards;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 20px;
+    }
+}

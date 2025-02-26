@@ -1,4 +1,5 @@
 import "./footer.scss";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -11,14 +12,14 @@ export const Footer = () => {
           </p>
           <ul className="footer-links-wrapper">
             <li className="footer-link side">
-              <a href="/policy" target="_blank">
+              <Link href="/policy" target="_blank">
                 Політика Конфіденційності
-              </a>
+              </Link>
             </li>
             <li className="footer-link">
-              <a href="/terms" target="_blank">
+              <Link href="/terms" target="_blank">
                 Умови Використання
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

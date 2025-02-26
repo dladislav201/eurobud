@@ -1,0 +1,153 @@
+.product-features .picture {
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.product-features-block {
+    @media only screen and (min-width: 768px) {
+        position: relative;
+        box-sizing: border-box;
+        padding: 200px 0;
+    }
+
+    .media-caption {
+        font-size: 13px;
+        font-weight: 400;
+        position: absolute;
+    }
+
+    &.durability .media-caption {
+        color: var(--r-saturated-grey-txt-color);
+        bottom: 18px;
+    }
+
+    &.durability .media-caption.top {
+        left: 20px;
+    }
+
+    &.durability .media-caption.side {
+        left: calc(51.5% + 20px);
+    }
+
+    &.versatility .media-caption {
+        bottom: 125px;
+        left: 55px;
+    }
+
+    &.durability .img-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 75px 0 55px;
+    }
+
+    &.durability .img-wrapper .scale-pool {
+        display: flex;
+        width: 48.5%;
+    } 
+
+    &.durability .img-wrapper .img {
+        width: 100%;
+    }
+
+    &.manual-control,
+    &.saving-space,
+    &.tree-space,
+    &.versatility {
+        background-color: var(--r-calm-grey-bg-color);
+    }
+
+    &.winter-care-sliding,
+    &.corrosion-protection,
+    &.durability {
+        background-color: var(--r-calm-dark-bg-color);
+        color: var(--r-main-txt-dark-theme-color);
+    }
+
+    .usability .media-wrapper,
+    .sliding-design .media-wrapper,
+    .gate-comfort .media-wrapper,
+    .tree-space .media-wrapper,
+    .swing-design .media-wrapper {
+        margin: 75px auto 55px;
+        width: 1050px;
+        height: 580px;
+    }
+
+    .gate-width .media-wrapper,
+    .saving-space .media-wrapper,
+    .winter-care-garage .media-wrapper,
+    .manual-control .media-wrapper {
+        margin: 72px 0 58px;
+        height: 580px;
+    }
+
+    
+    .versatility .media-wrapper {
+        margin: 155px 0 0;
+        height: 580px;
+    }
+
+    .versatility .picture.system {
+        background-position: left center;
+        background-image: url('/img/automatic-versatility.png');
+    }
+
+    &.material-gallery .arrow-btn {
+        background-color: rgba(110, 110, 115, .48);
+    }
+
+    &.material-gallery .arrow-btn svg path {
+        fill: rgba(245, 245, 247, .57);
+    }
+
+    &.material-gallery .arrow-btn:not(.disabled):hover {
+        background-color: rgba(110, 110, 115, .42);
+    }
+
+    &.material-gallery .arrow-btn:not(.disabled):hover svg path {
+        fill: rgba(245, 245, 247, .84);
+    }
+
+    &.panorama .product-features-block.energy-efficiency {
+        background-color: var(--r-calm-grey-bg-color);
+    }
+}
+
+.product-features-eyebrow {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    margin: 0 0 32px;
+    text-transform: uppercase;
+}
+
+.installation-container .product-features-eyebrow {
+    position: absolute;
+    top: 35px;
+    color: var(--r-main-txt-dark-theme-color);
+}
+
+.product-features-border {
+    margin: 0 55.2px;
+    height: 1px;
+    background-color: rgba(110,110,115);
+}
+
+.product-features-block.material-gallery .headline {
+    text-align: center;
+}
+
+.product-features .winter-care-sliding .media-wrapper {
+    margin: 72px auto 58px;
+    width: 1050px;
+    height: 580px;
+}
+
+.product-features .for-automatic .media-wrapper {
+    height: 300px;
+}

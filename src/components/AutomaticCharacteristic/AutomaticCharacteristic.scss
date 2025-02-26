@@ -1,0 +1,216 @@
+.product-overlay-container {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: flex-start;
+    inset-inline-end: 0;
+    inset-inline-start: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.overlay-card-wrapper {
+    min-height: 100vh;
+    min-width: 320px;
+    width: 100%;
+}
+
+.overlay-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 28px 28px 0 0;
+    margin: 95px 10px 0;
+    min-height: calc(100vh - 25%);
+    position: relative;
+
+    .card-btn-root {
+        z-index: 1;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        height: calc(100% - 12px);
+        pointer-events: none;
+
+        .modal-close-button {
+            margin: 0;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 22px;
+            pointer-events: auto;
+        }
+    }
+
+    .characteristics-container {
+        padding: 45px 0 0;
+    }
+
+    .characteristics-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .characteristics-item {
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            border-bottom: 1px solid var(--r-main-calm-border-color);
+            flex-direction: row;
+            padding: 12px 0;
+            width: 260px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }     
+    }  
+
+    .characteristic-icon{
+        margin-right: 14px;
+        width: 54px;
+    }
+
+    .characteristic-capture {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.product-card-headline {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.item-content-container {
+    box-sizing: border-box;
+    padding: 95px 0 75px;
+
+    .wrapper {
+        text-align: center;
+    }
+}
+
+.card-pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .product-card-pricing {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 9px 0 0;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 18px;
+    }
+}
+
+.product-card-gallery-container {
+    height: fit-content;
+    width: 100%;
+
+    .product-card-gallery {
+        margin: 65px 0 0;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .product-card-gallery-items {
+        display: flex;
+        height: fit-content;
+        list-style: none;
+        text-align: start;
+        will-change: transform;
+    }
+    
+    .product-card-gallery-item {
+        height: 260px;
+        min-width: 100%;
+    }
+    
+    .product-card-content {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .product-card-img-wrapper {
+        border-radius: 16px;
+        height: 100%;
+        margin: 0 auto;
+        max-width: 260px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .product-card-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .dotnav-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 32px 0 0;
+    }
+    
+    .dotnav-container {
+        display: inline-flex;
+        justify-content: center;
+        list-style: none;
+    }
+    
+    .dotnav {
+        height: 8px;
+        margin-block: 0;
+        margin-inline: 7px;
+        position: relative;
+        width: 8px;
+    }
+
+    .dotnav-btn {
+        background-color: #000;
+        border: none;
+        border-radius: 50%;
+        height: inherit;
+        left: 0;
+        opacity: .38;
+        position: absolute;
+        top: 0;
+        width: inherit;
+        transition: opacity .1s ease;
+
+        &.relevant {
+            opacity: .77;
+        }
+
+        &:active {
+            outline: 3px solid rgba(0, 113, 227, 0.6);
+            outline-offset: 2px;
+        }
+    }
+}
+
+.overlay-contact-wrapper {
+    background-color: var(--r-calm-grey-bg-color);
+    border-radius: 0 0 28px 28px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    padding: 75px 0 95px;
+    margin: 0 10px 10px;
+}
+
+.product-support-block {
+    &:last-child {
+        padding-top: 38px;
+    }
+}

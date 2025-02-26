@@ -1,0 +1,73 @@
+.config-items-container {
+    margin-inline: 27.8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    list-style: none;
+    padding: 14px 0;
+    scrollbar-width: none;
+}
+
+.config-item {
+    display: inline-block;
+    padding: 0 6px;
+    vertical-align: top;
+
+    &.relevant {
+        .config-btn {
+            background-color: var(--r-main-txt-light-theme-color);
+            color: #fff;
+        }
+    }
+}
+
+.config-btn-wrapper {
+    margin: 6px 0 0;
+    position: relative;
+}
+
+.config-btn {
+    background-color: var(--r-calm-grey-bg-color);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: var(--r-calm-grey-txt-color);
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    white-space: nowrap;
+    transition: background-color .14s ease, color .14s ease;
+}
+
+.slide-list-btn {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: opacity .14s ease, visibility .14s ease;
+    width: 27.8px;
+
+    &.left {
+        border-right: 1.2px solid var(--r-main-calm-border-color);
+        left: 0;
+    }
+
+    &.right {
+        border-left: 1.2px solid var(--r-main-calm-border-color);
+        right: 0;
+    }
+
+    &:disabled {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    svg {
+        fill: rgba(30,30,31,.48);
+    }
+}

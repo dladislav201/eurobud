@@ -14,10 +14,6 @@
         &:hover {
             background-color: var(--r-main-btn-hover-color);
         }
-
-        &:active {
-            
-        }
     }
 
     @media (hover: none) {
@@ -54,7 +50,21 @@
     width: 40px;
     height: 40px;
 
-    &.play {
+    &.internal-btn-play {
+        position: absolute;
+        right: 22px;
+        bottom: 22px;
+        backdrop-filter: saturate(180%) blur(16px);
+        -webkit-backdrop-filter: saturate(180%) blur(16px);
+        background-color: hsla(0, 0%, 100%, .3);
+        box-shadow: inset .5px 1px 1px hsla(0, 0%, 100%, .2), .5px .5px 3px rgba(0, 0, 0, .18);
+    
+        &::after {
+            background-color: var(--r-main-txt-dark-theme-color);
+        }
+    }
+
+    &.paused {
         &::after {
             -webkit-mask: url('/img/video-play-icon.svg');
             mask: url('/img/video-play-icon.svg');
@@ -80,22 +90,36 @@
 }
 
 .btn-chevron {
-    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     border: none;
     border-radius: 36px;
-    display: flex;
-    font-style: normal;
     height: 40px;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-    transition: opacity .4s ease;
     width: 40px;
+    overflow: hidden;
     background-color: #d2d2db;
     color: rgba(30,30,31,.48);
+    transition: background-color .14s ease, color .14s ease, opacity .4s ease;
 
     &:disabled {
         opacity: .4;
+    }
+
+    &:not(:disabled) {
+        @media (hover: hover) {
+            &:hover {
+                background-color: rgba(210, 210, 219, .7);
+                color: rgba(30, 30, 31, .45);
+            }
+        }
+
+        @media (hover: none) {
+            &:active {
+                background-color: rgba(210, 210, 219, .7);
+                color: rgba(30, 30, 31, .45);
+            }
+        }
     }
 
     svg {
@@ -103,5 +127,40 @@
         pointer-events: none;
         width: 100%;
         fill: currentColor;
+    }
+}
+
+.modal-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+    margin-top: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .modal-close-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e8e8ed;
+        border-radius: 50%;
+        color: rgba(0,0,0,.56);
+        height: 36px;
+        outline: none;
+        width: 36px;
+
+        svg {
+            fill: currentColor;
+            height: 20px;
+            pointer-events: none;
+            width: 20px;
+        }
     }
 }

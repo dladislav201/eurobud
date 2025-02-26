@@ -77,44 +77,7 @@
     .br-mob {
       display: none;
     }
-    .product-features-block .media-caption {
-      font-size: 13px;
-      font-weight: 400;
-      position: absolute;
-    }
-  
-    .product-features-block.durability .media-caption {
-      color: var(--r-saturated-grey-txt-color);
-      bottom: 18px;
-    }
-    .product-features-block.durability .media-caption.top {
-      left: 20px;
-    }
-    .product-features-block.durability .media-caption.side {
-      left: calc(51.5% + 20px);
-    }
-  
-    .product-features-block.versatility .media-caption {
-      bottom: 125px;
-      left: 55px;
-    }
-  
-    .product-features-block.durability .img-wrapper {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 75px 0 55px;
-    }
-  
-    .product-features-block.durability .img-wrapper .scale-pool {
-      display: flex;
-      width: 48.5%;
-    } 
-  
-    .product-features-block.durability .img-wrapper .img {
-      width: 100%;
-    }
+    
     
   
     .auto-versatility-typography-wrapper {
@@ -287,20 +250,6 @@
       flex-direction: row;
       gap: 45px;
       align-items: center;
-    }
-  
-    .video-caption {
-      position: absolute;
-      z-index: 2;
-      font-size: 15px;
-      line-height: 17px;
-      letter-spacing: -.02em;
-      font-weight: 400;
-      bottom: 30px;
-      color: var(--r-main-txt-dark-theme-color);
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
     }
   
     .contact-link-block {
@@ -596,12 +545,7 @@
     }
   
   
-    .product-features-block.manual-control,
-    .product-features-block.saving-space,
-    .product-features-block.tree-space,
-    .product-features-block.versatility {
-      background-color: var(--r-calm-grey-bg-color);
-    }
+    
   
   
     
@@ -622,20 +566,6 @@
       height: 100%;
     }
 
-  
-    .product-features-eyebrow {
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: -.02em;
-      margin: 0 0 32px;
-      text-transform: uppercase;
-      /* color: var(--r-calm-grey-txt-color); */
-    }
-    .installation-container .product-features-eyebrow {
-      position: absolute;
-      top: 35px;
-      color: var(--r-main-txt-dark-theme-color);
-    }
   
     .installation-container {
       position: relative;
@@ -718,36 +648,7 @@
       color: var(--r-calm-grey-txt-color);
     }
   
-    .product-features-border {
-      margin: 0 55.2px;
-      height: 1px;
-      background-color: rgba(110,110,115);
-    }
-  
-    .product-features-block {
-      position: relative;
-      box-sizing: border-box;
-      padding: 200px 0;
-    }
-  
-    .product-features-block.swing-design,
-    .product-features-block.sliding-design,
-    .product-features-block.material-gallery {
-      background-color: #000;
-      color: var(--r-main-txt-dark-theme-color);
-    }
     
-    .product-features-block.material-gallery .headline {
-      text-align: center;
-    }
-  
-    .product-features-block.winter-care-sliding,
-    .product-features-block.corrosion-protection,
-    .product-features-block.durability {
-      background-color: var(--r-calm-dark-bg-color);
-      color: var(--r-main-txt-dark-theme-color);
-    }
-  
 
   
     .card-section .description {
@@ -770,109 +671,7 @@
     
   
   
-    .product-features .picture {
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 100%;
-      /* height: 100%; */
-    }
-  
-    .product-features .gate-width .media-wrapper,
-    .product-features .saving-space .media-wrapper,
-    .product-features .winter-care-garage .media-wrapper,
-    .product-features .manual-control .media-wrapper {
-      margin: 72px 0 58px;
-      height: 580px;
-    }
-  
-    .product-features .winter-care-sliding .media-wrapper {
-  
-      margin: 72px auto 58px;
-      width: 1050px;
-      height: 580px;
-    }
-  
-    .product-features .gate-width .picture {
-      background-position: center;
-      background-image: url('/img/gate-sliding-gate-width.jpg');
-    }
-  
-    .product-features .saving-space .picture {
-      background-position: left center;
-      background-image: url('/img/gate-sliding-saving-space.jpg');
-    }
-  
-    .product-features .usability .media-wrapper,
-    .product-features .sliding-design .media-wrapper,
-    .product-features .gate-comfort .media-wrapper,
-    .product-features .tree-space .media-wrapper,
-    .product-features .swing-design .media-wrapper {
-      margin: 75px auto 55px;
-      /* padding: 0 125px; */
-      width: 1050px;
-      height: 580px;
-    }
-    .product-features .usability .picture {
-      background-position: left center;
-      background-image: url('/img/automatic-usability.jpg');
-    }
-  
-    .product-features .winter-care-sliding .picture {
-      background-position: left center;
-      background-image: url('/img/gate-sliding-winter-care.jpg');
-    }
-  
-  
-    .product-features .winter-care-garage .picture {
-      background-position: right center;
-      background-image: url('/img/gate-garage-winter-care.jpg');
-    }
-  
-    .product-features .manual-control .picture {
-      background-position: right center;
-      background-image: url('/img/gate-garage-manual-control.jpg');
-    }
-  
-   
-    .product-features .gate-comfort .picture {
-      background-position: right center;
-      background-image: url('/img/gate-swing-comfort.jpg');
-    }
-  
-    .product-features .tree-space .picture {
-      background-position: right center;
-      background-image: url('/img/gate-swing-tree-space.jpg');
-    }
-  
-    .product-features .swing-design .picture {
-      background-position: right center;
-      background-image: url('/img/gate-swing-design.jpg');
-    }
-  
-  
-    .product-features .sliding-design .picture {
-      background-position: right center;
-      background-image: url('/img/gate-sliding-design.jpg');
-    }
-  
-    .product-features .for-automatic .media-wrapper {
-      height: 300px;
-    }
-    .product-features .for-automatic .picture {
-      background-position: center;
-      background-image: url('/img/swing-automatic-img.jpg');
-    }
-  
-    .product-features .versatility .media-wrapper {
-      margin: 155px 0 0;
-      height: 580px;
-      /* padding: 0 0 110px; */
-    }
-    .product-features .versatility .picture.system {
-      background-position: left center;
-      /* background-size: contain; */
-      background-image: url('/img/automatic-versatility.png');
-    }
+    
   
   
   
@@ -908,10 +707,7 @@
       background: rgba(210,210,215,0.64);
     }
   
-    .product-features-block.material-gallery .arrow-btn {
-      background-color: rgba(110, 110, 115, .48);
-    }
-  
+   
     .arrow-btn.disabled {
       opacity: .2;
     }
@@ -923,16 +719,7 @@
     .product-gallery-container .arrow-btn svg path {
       fill: rgba(0,0,0,0.56);
     }
-    .product-features-block.material-gallery .arrow-btn svg path {
-      fill: rgba(245, 245, 247, .57);
-    }
-    
-    .product-features-block.material-gallery .arrow-btn:not(.disabled):hover {
-      background-color: rgba(110, 110, 115, .42);
-    }
-    .product-features-block.material-gallery .arrow-btn:not(.disabled):hover svg path {
-      fill: rgba(245, 245, 247, .84);
-    }
+
   
   
   
@@ -943,36 +730,12 @@
       background-color: var(--r-calm-grey-bg-color);
     }
   
-    .product-gallery {
-      position: relative;
-      overflow: hidden;
-      margin: 45px 0 0;
-    }
-  
-    
+
     .item-link {
       text-decoration: none;
       color: var(--r-add-link-color);
       font-size: 17px;
       font-weight: 300;
-    }
-  
-    .gallery-items-container {
-      display: flex;
-      list-style: none;
-      text-align: start;
-      padding: 0 0 0 24.4px;
-      height: fit-content;
-      will-change: transform;
-    }
-    .gallery-items-container.transition {
-      transition: .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    }
-  
-    .gallery-item {
-      min-width: 280px;
-      height: 380px;
-      padding: 0 25px 0 0;
     }
   
     .product-gallery .picture-wrapper {
@@ -1403,10 +1166,6 @@
       height: 30px;
       width: 30px;
     }
-    .modal-close-icon svg {
-      height: 16px;
-      width: 16px;
-    }
  
     .grey-auto-container {
       width: 100%;
@@ -1615,76 +1374,6 @@
     }
     
   
-    
-    .automatic-sections .card.usability .card-front {
-      background-size: cover;
-      background-position: -130px center;
-      background-repeat: no-repeat;
-      background-image: url('/img/swing-automatic-img.jpg');
-    }
-    .automatic-sections .card.security .card-front {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-image: url('/img/carousel_auto_two.jpg');
-    }
-    .automatic-sections .card.durability .card-front {
-      background-size: cover;
-      background-position: center 0px;
-      background-repeat: no-repeat;
-      background-image: url('/img/carousel_auto_three.jpg');
-    }
-    .automatic-sections .card.versatility .card-front {
-      background-size: cover;
-      background-position: center 0px;
-      background-repeat: no-repeat;
-      background-image: url('/img/carousel_auto_four.jpg');
-    }
-    .automatic-sections .card.usability .card-front::before,
-    .automatic-sections .card.security .card-front::before,
-    .automatic-sections .card.versatility .card-front::before {
-      z-index: -1;
-      content: '';
-      position: absolute;
-      border-radius: 28px 28px 0 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 220px;
-      backdrop-filter: blur(2px);
-      mask: linear-gradient(black 70%, transparent);
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.48) 81%);
-    }
-  
-  
-    /*  */
-    .panorama .card.energy-efficiency .card-front {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-image: url('/img/panorama_energy_efficiency.jpg');
-    }
-    .panorama .card.usability .card-front {
-      background-size: cover;
-      background-position: left bottom;
-      background-repeat: no-repeat;
-      background-image: url('/img/panorama_usability.jpg');
-    }
-    .panorama .card.design .card-front {
-      background-size: cover;
-      background-position: -50px top;
-      background-repeat: no-repeat;
-      background-image: url('/img/panorama_design.jpg');
-    }
-    .panorama .card.durability .card-front {
-      background-size: cover;
-      background-position: center 0px;
-      background-repeat: no-repeat;
-      background-image: url('/img/panorama_durability.jpg');
-    }
-    /*  */
-  
-  
     .card-front-eyebrow {
       font-size: 13px;
       font-weight: 500;
@@ -1715,22 +1404,7 @@
       margin: 0 auto 80px;
     }
     
-    .product-banner-title {
-      font-size: 68px;
-      letter-spacing: -.04em;
-      font-weight: 600;
-      transform: translateY(35px);
-      animation: autoFadeIn .7s cubic-bezier(0.455,0.030,0.515,0.955) both, manualMoveIn .7s cubic-bezier(0.455,0.030,0.515,0.955) forwards;
-    }
-  
-    .product-banner-slogan {
-      font-size: 20px;
-      font-weight: 400;
-      margin: 14px 0 0;
-      transform: translateY(25px);
-      opacity: 0;
-      animation: autoFadeIn .7s cubic-bezier(0.455,0.030,0.515,0.955) both, manualMoveIn .7s cubic-bezier(0.455,0.030,0.515,0.955) 0.15s forwards;
-    }
+   
   
     .product-hero-container {
       position: relative;
@@ -1750,19 +1424,7 @@
       /* padding: 0 90px; */
       object-fit: cover;
     }
-  
-    .product-banner {
-      position: relative;
-      width: 100%;
-      height: fit-content;
-      text-align: center;
-      /* margin-bottom: 135px; */
-    }
-  
-    .gate.all .product-banner {
-      margin-bottom: 0;
-    }
-  
+
     .barrier-main-btn-container {
       margin-top: 50px;
     }
@@ -2424,9 +2086,7 @@
     }
   
   
-    .product-features.panorama .product-features-block.energy-efficiency {
-      background-color: var(--r-calm-grey-bg-color);
-    }
+ 
   
     .test-btn-container {
       position: absolute;
@@ -2531,11 +2191,6 @@
       left: 23px;
     }
   
-    .product-features-block.energy-efficiency .media-caption {
-      margin: 8px 0 0;
-      color: var(--r-saturated-grey-txt-color);
-    }
-  
     .product-features-block.durability .img-wrapper {
       position: relative;
       margin: 45px 0 34px;
@@ -2605,48 +2260,7 @@
   
 
   
-  
-    /* .media-grid {
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      gap: 16px;
-    }
-  
-    
-    .product-features-block.energy-efficiency .media-grid-wrapper {
-      margin: 63px 0 58px;
-    }
-  
-    .media-grid .picture {
-      height: 400px;
-    } */
-  
-  
-  
-    /* .product-features-block.energy-efficiency .picture {
-      background-position: center;
-      background-image: url('/img/panorama-energy-efficiency.jpg');
-    } */
-  
-  
-  
-    /* .media-grid .picture.top {
-      grid-area: winterTop;
-      background-position: center;
-      background-image: url('/img/panorama-winter-top.jpg');
-    }
-    .media-grid .picture.bottom-left {
-      grid-area: winterBottomLeft;
-      background-position: right center;
-      background-image: url('/img/panorama-winter-left.jpg');
-    }  */
-  
-  
-  
-  
+
   
     .gallery-item[data-animated-element].first-anim.slideUp {
       opacity: 1;
@@ -2813,20 +2427,6 @@
       justify-content: normal;
       gap: 45px;
       border-bottom: 1px solid var(--r-main-calm-border-color);
-    }
-  
-    .video-caption {
-      position: absolute;
-      z-index: 2;
-      font-size: 13px;
-      line-height: 17px;
-      letter-spacing: -.02em;
-      font-weight: 500;
-      bottom: 30px;
-      color: var(--r-main-txt-dark-theme-color);
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
     }
   
     .contact-link-block {
@@ -3166,16 +2766,16 @@
   
   
   
-    .product-features-block.winter-care-garage,
-    .product-features-block.saving-space,
-    .product-features-block.tree-space,
-    .product-features-block.versatility,
-    .product-features-block.corrosion-protection,
-    .product-features-block.gate-width,
-    .product-features-block.sliding-design,
-    .product-features-block.gate-comfort {
-      background-color: var(--r-calm-grey-bg-color);
-    }
+    // .product-features-block.winter-care-garage,
+    // .product-features-block.saving-space,
+    // .product-features-block.tree-space,
+    // .product-features-block.versatility,
+    // .product-features-block.corrosion-protection,
+    // .product-features-block.gate-width,
+    // .product-features-block.sliding-design,
+    // .product-features-block.gate-comfort {
+    //   background-color: var(--r-calm-grey-bg-color);
+    // }
   
   
     .video-wrapper {
@@ -3307,17 +2907,17 @@
       padding: 90px 0;
     }
   
-    .product-features-block.swing-design,
-    .product-features-block.material-gallery,
-    .product-features-block.winter-care-sliding {
-      background-color: #000;
-      color: var(--r-main-txt-dark-theme-color);
-    }
+    // .product-features-block.swing-design,
+    // .product-features-block.material-gallery,
+    // .product-features-block.winter-care-sliding {
+    //   background-color: #000;
+    //   color: var(--r-main-txt-dark-theme-color);
+    // }
   
-    .product-features-block.durability {
-      background-color: var(--r-calm-dark-bg-color);
-      color: var(--r-main-txt-dark-theme-color);
-    }
+    // .product-features-block.durability {
+    //   background-color: var(--r-calm-dark-bg-color);
+    //   color: var(--r-main-txt-dark-theme-color);
+    // }
   
     
   
@@ -3359,14 +2959,6 @@
   
     
   
-  
-    .product-features .picture {
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 100%;
-      /* height: 100%; */
-    }
-  
     .product-features .gate-width .media-wrapper {
       margin: 45px 0 34px;
       height: 400px;
@@ -3389,10 +2981,6 @@
       margin: 52px 0;
       height: 260px;
     }
-    .automatic-sections .product-features .usability .picture {
-      background-position: left center;
-      background-image: url('/img/automatic-usability.jpg');
-    }
   
   
   
@@ -3402,26 +2990,7 @@
       margin: 63px 24.4px;
       border-radius: 20px;
     }
-    .panorama .product-features .usability .picture {
-      background-position: center;
-      background-image: url('/img/panorama-usability.jpg');
-    }
-  
-  
-    .panorama .product-features .energy-efficiency .picture {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 680px;
-      background-position: center;
-      background-image: url('/img/panorama-energy-efficiency.jpg');
-    }
-  
-  
-  
-  
-    
+
     .product-features .winter-care-sliding .media-wrapper,
     .product-features .sliding-design .media-wrapper,
     .product-features .swing-design .media-wrapper {
@@ -3486,13 +3055,8 @@
     .product-features .versatility .media-wrapper {
       margin: 68px 0 0;
       height: 260px;
-      /* padding: 0 0 110px; */
     }
-    .product-features .versatility .picture.system {
-      background-position: left center;
-      background-image: url('/img/automatic-versatility.png');
-    }
-  
+
     .arrow-btn {
       width: 40px;
       height: 40px;
@@ -3526,9 +3090,9 @@
     }
   
   
-    .product-features-block.material-gallery .arrow-btn:not(.disabled):active {
-      background: rgba(255, 255, 255, 0.15);
-    }
+    // .product-features-block.material-gallery .arrow-btn:not(.disabled):active {
+    //   background: rgba(255, 255, 255, 0.15);
+    // }
 
   
   
@@ -3536,18 +3100,6 @@
       font-size: 14px;
       font-weight: 500;
       margin: 15px 0 0;
-    }
-  
-    .gallery-items-container {
-      display: flex;
-      list-style: none;
-      text-align: start;
-      padding: 0 0 0 24.4px;
-      height: fit-content;
-      will-change: transform;
-    }
-    .gallery-items-container.transition {
-      transition: .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     }
   
     .product-gallery .picture-wrapper {
@@ -4019,10 +3571,7 @@
       height: 30px;
       width: 30px;
     }
-    .modal-close-icon svg {
-      height: 16px;
-      width: 16px;
-    }
+
 
     .grey-auto-container {
       width: 100%;
@@ -4271,35 +3820,7 @@
       mask: linear-gradient(black 70%, transparent);
       background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.48) 81%);
     }
-  
-  
-    /*  */
-    .panorama .card.energy-efficiency .card-front {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-image: url('/img/panorama_energy_efficiency.jpg');
-    }
-    .panorama .card.usability .card-front {
-      background-size: cover;
-      background-position: left bottom;
-      background-repeat: no-repeat;
-      background-image: url('/img/panorama_usability.jpg');
-    }
-    .panorama .card.design .card-front {
-      background-size: cover;
-      background-position: -50px top;
-      background-repeat: no-repeat;
-      background-image: url('/img/panorama_design.jpg');
-    }
-    .panorama .card.durability .card-front {
-      background-size: cover;
-      background-position: center 0px;
-      background-repeat: no-repeat;
-      background-image: url('/img/panorama_durability.jpg');
-    }
-    /*  */
-  
+
   
     .card-front-eyebrow {
       font-size: 13px;
@@ -4331,24 +3852,6 @@
       margin: 0 auto 80px;
     }
     
-    .product-banner-title {
-      font-size: 44px;
-      letter-spacing: -.04em;
-      font-weight: 600;
-      transform: translateY(35px);
-      animation: autoFadeIn .7s cubic-bezier(0.455,0.030,0.515,0.955) both, manualMoveIn .7s cubic-bezier(0.455,0.030,0.515,0.955) forwards;
-    }
-
-  
-    .product-banner-slogan {
-      font-size: 20px;
-      font-weight: 400;
-      margin: 14px 0 0;
-      transform: translateY(25px);
-      opacity: 0;
-      animation: autoFadeIn .7s cubic-bezier(0.455,0.030,0.515,0.955) both, manualMoveIn .7s cubic-bezier(0.455,0.030,0.515,0.955) 0.15s forwards;
-    }
-  
     .product-hero-container {
       position: relative;
       height: 500px;
@@ -4366,18 +3869,7 @@
       height: 100%;
       object-fit: cover;
     }
-  
-    .product-banner {
-      position: relative;
-      width: 100%;
-      height: fit-content;
-      text-align: center;
-      /* margin-bottom: 135px; */
-    }
-  
-    .gate.all .product-banner {
-      margin-bottom: 0;
-    }
+
   
     .barrier-main-btn-container {
       margin-top: 50px;
@@ -5158,18 +4650,5 @@
   
   .round-button.light-theme path{
     fill: rgba(0, 0, 0, .77);
-  }
-  
-  .modal-close-icon svg {
-    fill: currentcolor;
-    position: absolute;
-    inset-inline-start: 50%;
-    pointer-events: none;
-  }
-  .round-button.open .modal-close-icon svg {
-    transform: translateX(-50%) rotate(45deg);
-  }
-  .round-button.close .modal-close-icon svg {
-    transform: translateX(-50%);
   }
   
