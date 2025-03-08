@@ -1,5 +1,5 @@
-// import "./AutomaticNav.scss";
 import Link from "next/link";
+import "./AutomaticNav.scss";
 
 export const AutomaticNav = () => {
   return (
