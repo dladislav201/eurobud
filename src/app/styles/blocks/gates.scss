@@ -1,0 +1,13 @@
+.gates-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--r-calm-grey-bg-color);
+
+    @media only screen and (min-width: 768px) {
+        gap: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        gap: 12px;
+    }   
+}

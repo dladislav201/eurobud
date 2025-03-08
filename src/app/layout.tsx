@@ -15,6 +15,8 @@ import "@/app/styles/blocks/conversation.scss";
 import "@/app/styles/blocks/homePage.scss";
 import "@/app/styles/blocks/gatesPage.scss";
 import "@/app/styles/blocks/productFeatures.scss";
+import "@/app/styles/blocks/panorama.scss";
+import "@/app/styles/blocks/gates.scss";
 
 const inter = Inter({
   variable: "--font-inter",

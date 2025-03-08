@@ -1,0 +1,33 @@
+  
+.gates-product {
+    background-color: #fff;
+    padding: 90px 0;
+
+    .gates-picture-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        @media only screen and (min-width: 768px) {
+            height: 520px;
+            width: 1050px;
+            margin: 72px auto 58px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            height: 240px;
+            margin: 52px 0 44px;
+        }
+    }
+
+    .gates-picture {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-groove {
+        margin-top: 44px;
+    }
+}

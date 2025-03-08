@@ -1,9 +1,8 @@
-import { ProductBanner, Ribbon } from "@/components";
-import Link from "next/link";
+import { Installation, ProductBanner, Ribbon } from "@/components";
 
 export default function Sliding() {
   return (
-    <main className="main flex gate">
+    <main className="main gate">
       <Ribbon saleProduct={"відкатних воріт"} saleProcent={20} />
 
       <ProductBanner
@@ -82,13 +81,13 @@ export default function Sliding() {
         </div>
 
         <div className="product-features-block winter-care-sliding">
-          <div className="wrapper inline-narrow float-right">
+          <div className="wrapper inline-narrow">
             <h1 className="headline average">Зручно в будь-яких умовах.</h1>
           </div>
           <div className="media-wrapper">
             <img className="picture" src="/img/gate-sliding-winter-care.jpg" />
           </div>
-          <div className="wrapper inline-narrow float-right">
+          <div className="wrapper inline-narrow">
             <p className="description average">
               Для відкриття воріт після снігопадів не потрібно розчищати площу
               перед ними. Достатньо звільнити від снігу невелику ділянку вздовж
@@ -97,7 +96,7 @@ export default function Sliding() {
           </div>
         </div>
         <div className="product-features-block sliding-design">
-          <div className="wrapper inline-narrow float-right">
+          <div className="wrapper inline-narrow">
             <h1 className="headline average">
               Будь-який дизайн. Будь-який колір.
             </h1>
@@ -105,7 +104,7 @@ export default function Sliding() {
           <div className="media-wrapper">
             <img className="picture" src="/img/gate-sliding-design.jpg" />
           </div>
-          <div className="wrapper inline-narrow float-right">
+          <div className="wrapper inline-narrow">
             <p className="description average">
               Ви можете самостійно вибрати матеріал для заповнення воріт, а
               також колір для фарбування конструкцій, щоб зберегти гармонію в
@@ -115,69 +114,7 @@ export default function Sliding() {
         </div>
       </section>
 
-      <section className="grey-container for-automatic">
-        <div className="wrapper inline-narrow float-right">
-          <p className="product-features-eyebrow">Автоматика</p>
-          <h1 className="headline average">
-            Відкривайте ворота однією кнопкою.
-          </h1>
-        </div>
-        <div className="video-wrapper" data-switch-parent>
-          <video
-            id="switchVideo"
-            className="video"
-            poster="/img/gate-garage-poster.jpg"
-            autoPlay
-            playsInline
-            muted
-            loop
-          >
-            <source src="/video/gate-garage-clip.mp4" type="video/mp4" />
-          </video>
-          <figcaption className="video-caption">
-            *Автоматика ALUTECH для гаражних воріт.
-          </figcaption>
-        </div>
-        <div className="wrapper inline-narrow float-right">
-          <div className="slide-container">
-            <p className="description average">
-              Керуйте воротами, просто натискаючи кнопку на пульті. Відкривайте
-              та закривайте в&apos;їзні ворота, навіть не виходячи з авто.
-            </p>
-            <Link className="second-link average black" href="/automatic">
-              Більше про автоматику
-              <span className="material-symbols-outlined normall">
-                chevron_right
-              </span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="installation-container">
-        <div className="installation-img-container">
-          <figure className="installation-img"></figure>
-        </div>
-        <div className="wrapper inline-narrow float-right">
-          <h1 className="headline average">Обирайте професіоналів.</h1>
-          <p className="description average">
-            Співробітники наших сервісних центрів отримують знання та досвід
-            доступні через навчальні проекти.
-          </p>
-          <div className="slide-container">
-            <p className="description average margin-top">
-              Якщо ви не можете отримати потрібної допомоги у виробників або
-              постачальників вашого виробу, ми допоможемо вам.
-            </p>
-            <Link className="second-link average white" href="/conversation">
-              Отримати консультацію
-              <span className="material-symbols-outlined normall">
-                chevron_right
-              </span>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <Installation />
     </main>
   );
 }

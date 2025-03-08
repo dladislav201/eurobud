@@ -1,0 +1,67 @@
+.panorama {
+    .card-wrapper {
+        width: 100%;
+        height: fit-content;
+        grid-template-rows: repeat(4, 540px);
+        display: grid;
+        grid-auto-columns: 100%;
+        grid-gap: 18px;
+        justify-content: center;
+    }
+
+    .media-wrapper {
+        height: 680px;
+        margin-inline: 24.4px;
+
+        .picture {
+            border-radius: 20px;
+        }
+    }
+}
+
+.number-value-group {
+    &.panorama-system-temperature {
+        
+        &.slideUp {
+            .number-group {
+                &.low.number-3 {
+                    transform: translateY(-3em);
+                    transition: transform .7s ease;
+                } 
+                
+                &.fast.number-0 {
+                    transform: translateY(-10em);
+                    transition: transform .7s ease-out;
+                }
+                
+                &.low.number-4 {
+                    transform: translateY(-4em);
+                    transition: transform .7s ease;
+                }
+                
+                &.fast.number-5 {
+                    transform: translateY(-5em);
+                    transition: transform .7s ease-out;
+                }
+            }
+        }
+
+        .number-group {
+            &.low.number-3 {
+                transform: translateY(-2em);
+            }
+
+            &.fast.number-0 {
+                transform: translateY(-2em);
+            }
+
+            &.low.number-4 {
+                transform: translateY(-3em);
+            }
+
+            &.fast.number-5 {
+                transform: translateY(0em);
+            }
+        }
+    }
+}

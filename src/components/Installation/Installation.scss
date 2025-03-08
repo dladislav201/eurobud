@@ -1,0 +1,19 @@
+ 
+.installation-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: var(--r-main-txt-dark-theme-color);
+    padding-bottom: 90px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .material-symbols-outlined {
+        top: 4px;
+    }
+}
+    

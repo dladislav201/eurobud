@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
-import { useDrag } from "react-use-gesture";
+import { useDrag } from "@use-gesture/react";
 import { motion } from "framer-motion";
 import classNames from "classnames";
 import { AutomaticModel } from "@/models";
@@ -14,6 +14,8 @@ interface AutomaticCharacteristicProps {
   automaticModel: AutomaticModel;
   onClose: () => void;
 }
+
+const AnimatedUL = animated("ul");
 
 export const AutomaticCharacteristic = ({
   automaticModel,
@@ -44,7 +46,7 @@ export const AutomaticCharacteristic = ({
           event.preventDefault();
 
           if (!down) {
-            if (velocity > 0.2) {
+            if (Math.abs(velocity[0]) > 0.2) {
               const nextIndex =
                 dx > 0 ? currentGalleryIndex - 1 : currentGalleryIndex + 1;
               const clampedIndex = Math.max(
@@ -146,7 +148,7 @@ export const AutomaticCharacteristic = ({
             </div>
             <div className="product-card-gallery-container">
               <div className="product-card-gallery">
-                {/* <animated.ul
+                <AnimatedUL
                   {...bind()}
                   className="product-card-gallery-items"
                   style={{
@@ -168,7 +170,7 @@ export const AutomaticCharacteristic = ({
                       </div>
                     </li>
                   ))}
-                </animated.ul> */}
+                </AnimatedUL>
               </div>
               {automaticModel.productGalleryImages.length > 1 && (
                 <div className="dotnav-wrapper">
@@ -213,7 +215,8 @@ export const AutomaticCharacteristic = ({
             <div className="product-support-block">
               <h1 className="headline small">Як замовити</h1>
               <p className="product-support-content">
-                Ми тут щоб знайти найкраще рішення для вас та вашого об'єкту.
+                Ми тут щоб знайти найкраще рішення для вас та вашого
+                об&apos;єкту.
               </p>
               <Link className="product-support-link" href="/conversation">
                 Розпочати

@@ -13,19 +13,22 @@
     }
 
     &.inline-narrow {
-        margin: 0 55.2px;
+        margin-inline: 55.2px;
     }
 
     &.inline-wide {
-        margin: 0 24.4px;
-    }
-
-    &.inline-narrow {
-        margin: 0 12.2px;
+        margin-inline: 24.4px;
     }
 
     &.block-narrow {
-        padding: 58px 0;
+        padding-block: 58px;
+    }
+
+    &.center {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 }
 
@@ -112,4 +115,8 @@
 
 .mango-copy {
     color: var(--r-main-btn-color);
+}
+
+.typography-mt {
+    margin-top: 45px;
 }

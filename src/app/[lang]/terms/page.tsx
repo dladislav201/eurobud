@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Terms() {
   return (
-    <main className="main flex terms">
+    <main className="main terms">
       <div className="wrapper inline-wide">
         <h1 className="data-main-headline">Умови Використання</h1>
         <p className="data-description">

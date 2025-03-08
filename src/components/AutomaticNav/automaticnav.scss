@@ -1,5 +1,5 @@
 .automatic-nav {
-    box-sizing: border-box;
+    
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -47,13 +47,19 @@
             }
         }
 
-        &:active {
-            .icon-border {
-                box-shadow: 0px 0px 0px 4px rgba(0, 113, 227, 0.4);  
+        @media (hover: hover) {
+            &:hover {
+                .icon-border {
+                    box-shadow: 0px 0px 0px 4px rgba(0, 113, 227, 0.4);  
+                }
             }
+        }
 
-            .chapter {
-                color: var(--r-main-link-color);
+        @media (hover: none) {
+            &:active {
+                .icon-border {
+                    box-shadow: 0px 0px 0px 4px rgba(0, 113, 227, 0.4);  
+                }
             }
         }
     }

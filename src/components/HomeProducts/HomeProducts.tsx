@@ -87,7 +87,7 @@ export const HomeProducts = ({ product }: HomeProductsProps) => {
         )}
       </div>
       <div className="wrapper inline-wide">
-        <p className="description small-bold float-right">{description}</p>
+        <p className="description small">{description}</p>
       </div>
       <div className="btn-groove">
         <Link className="btn btn-main btn-small" href="/conversation">

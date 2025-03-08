@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
-import { useDrag } from "react-use-gesture";
+import { useDrag } from "@use-gesture/react";
 import { AutomaticModel } from "@/models";
 import { AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -12,6 +12,8 @@ import { AutomaticCharacteristic } from "../AutomaticCharacteristic";
 interface ProductGalleryProps {
   automaticModels: AutomaticModel[];
 }
+
+const AnimatedUL = animated("ul");
 
 export const ProductGallery = ({ automaticModels }: ProductGalleryProps) => {
   const [activeCharacteristicIndex, setActiveCharacteristicIndex] = useState<
@@ -58,7 +60,7 @@ export const ProductGallery = ({ automaticModels }: ProductGalleryProps) => {
       event.preventDefault();
 
       if (!down) {
-        if (velocity > 0.2) {
+        if (Math.abs(velocity[0]) > 0.2) {
           const nextIndex =
             dx > 0 ? currentGalleryIndex - 1 : currentGalleryIndex + 1;
           const clampedIndex = Math.max(
@@ -97,7 +99,7 @@ export const ProductGallery = ({ automaticModels }: ProductGalleryProps) => {
   return (
     <>
       <div className="product-gallery">
-        {/* <animated.ul
+        <AnimatedUL
           {...bind()}
           className="gallery-items-container"
           style={{
@@ -144,7 +146,7 @@ export const ProductGallery = ({ automaticModels }: ProductGalleryProps) => {
               </div>
             </li>
           ))}
-        </animated.ul> */}
+        </AnimatedUL>
         <AnimatePresence>
           {activeCharacteristicIndex !== null && (
             <AutomaticCharacteristic

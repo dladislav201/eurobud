@@ -74,7 +74,6 @@
     &.giant {
         @media only screen and (min-width: 768px) {
             font-size: 25px;
-            line-height: 31px;
             letter-spacing: -.023em;
             font-weight: 600;
             text-align: left;
@@ -82,7 +81,6 @@
 
         @media only screen and (max-width: 767px) {
             font-size: 25px;
-            line-height: 31px;
             letter-spacing: -.023em;
             font-weight: 600;
             text-align: left;
@@ -92,29 +90,27 @@
     &.great {
         @media only screen and (min-width: 768px) {
             font-size: 23px;
-            line-height: 29px;
             font-weight: 600;
         }
 
         @media only screen and (max-width: 767px) {
             font-size: 23px;
-            line-height: 29px;
             font-weight: 600;
         }
     }
 
     &.medium {
+        line-height: 1.28;
+
         @media only screen and (min-width: 768px) {
             font-size: 30px;
-            line-height: 1.22;
             font-weight: 600;
             letter-spacing: -.016em;
         }
 
         @media only screen and (max-width: 767px) {
             font-size: 19px;
-            line-height: 25px;
-            font-weight: 600;
+            font-weight: 500;
         }
     }
 
@@ -129,7 +125,7 @@
         @media only screen and (max-width: 767px) {
             font-size: 18px;
             line-height: 23px;
-            font-weight: 600;
+            font-weight: 500;
             letter-spacing: -.01em;
         }
     }
@@ -145,29 +141,12 @@
         @media only screen and (max-width: 767px) {
             font-size: 17px;
             line-height: 1.36;
-            font-weight: 500;   
+            font-weight: 400;   
             letter-spacing: -.014em;
         }
 
         &.second {
             margin-top: 24px;
-        }
-    }
-
-    &.small-bold {
-        @media only screen and (min-width: 768px) {
-            font-size: 26px;
-            line-height: 1.26;
-            font-weight: 500;   
-            letter-spacing: -.024em;  
-        }
-
-        @media only screen and (max-width: 767px) {
-            font-size: 16px;
-            line-height: 22px;
-            font-weight: 400;  
-            line-height: 1.2; 
-            letter-spacing: -.014em;  
         }
     }
 

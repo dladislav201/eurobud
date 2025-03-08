@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Policy() {
   return (
-    <main className="main flex policy">
+    <main className="main policy">
       <div className="wrapper inline-wide">
         <h1 className="data-main-headline"> Політика конфіденційності </h1>
         <p className="data-description">

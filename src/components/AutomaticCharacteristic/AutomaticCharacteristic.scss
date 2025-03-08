@@ -57,7 +57,7 @@
         .characteristics-item {
             display: flex;
             align-items: center;
-            box-sizing: border-box;
+            
             border-bottom: 1px solid var(--r-main-calm-border-color);
             flex-direction: row;
             padding: 12px 0;
@@ -86,7 +86,7 @@
 }
 
 .item-content-container {
-    box-sizing: border-box;
+    
     padding: 95px 0 75px;
 
     .wrapper {
@@ -200,7 +200,7 @@
 .overlay-contact-wrapper {
     background-color: var(--r-calm-grey-bg-color);
     border-radius: 0 0 28px 28px;
-    box-sizing: border-box;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;

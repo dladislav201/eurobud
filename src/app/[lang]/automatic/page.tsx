@@ -1,6 +1,6 @@
-import Link from "next/link";
 import {
   AutomaticNav,
+  Installation,
   ProductBanner,
   ProductGallery,
   Ribbon,
@@ -10,7 +10,7 @@ import { automatics } from "@/data/";
 export default function Automatic() {
   return (
     <>
-      <main className="main flex automatic-sections">
+      <main className="main">
         <Ribbon saleProduct={"автоматики"} saleProcent={20} />
 
         <ProductBanner
@@ -40,16 +40,16 @@ export default function Automatic() {
         ))}
 
         <section className="page-section block-wide">
-          <div className="wrapper inline-wide">
-            <h1 className="headline medium-small">
+          <div className="wrapper inline-wide center">
+            <h1 className="headline small">
               Дізнайтеся більше про переваги та можливості.
             </h1>
           </div>
         </section>
 
-        <section className="product-features automatic">
-          <div className="product-features-block usability">
-            <div className="wrapper inline-narrow float-right">
+        <section className="product-features">
+          <div className="product-features-block">
+            <div className="wrapper inline-narrow">
               <p className="product-features-eyebrow">Зручність використання</p>
               <h1 className="headline medium">
                 Одна кнопка, щоб тримати все під контролем.
@@ -58,14 +58,17 @@ export default function Automatic() {
             <div className="media-wrapper">
               <img className="picture" src="/img/automatic-usability.jpg" />
             </div>
-            <div className="wrapper inline-narrow float-right">
-              <p className="description great margin">
+            <div className="wrapper inline-narrow typography-mt">
+              <p className="description medium">
                 Щоб заїхати або виїхати з вашого дому, не потрібно виходити з
                 машини. Достатньо зробити лише одну дію — натиснути кнопку на
                 пульті.
               </p>
-              <div className="description-container">
-                <img className="icon" src="/img/gear-icon.png" />
+              <div className="description-container typography-mt">
+                <img
+                  className="product-features-icon"
+                  src="/img/gear-icon.png"
+                />
                 <p className="description small">
                   <span className="dark-span">Автозакриття.</span>
                   Після налаштування функції автозакриття, ворота закриються за
@@ -74,19 +77,19 @@ export default function Automatic() {
               </div>
             </div>
           </div>
-          <div className="product-features-block versatility">
+          <div className="product-features-block grey-bg">
             <div className="wrapper inline-narrow">
               <p className="product-features-eyebrow">Універсальність</p>
-              <h1 className="headline medium margin">
+              <h1 className="headline medium">
                 Немає електрики? Всеодно працює!
               </h1>
-              <div className="float-left">
+              <div className="description-container typography-mt">
                 <p className="description medium">
                   Якщо електрика відключиться, електропривід автоматично
                   заблокується, запобігаючи несанкціонованому проникненню на
                   вашу ділянку.
                 </p>
-                <p className="description medium second">
+                <p className="description medium">
                   Для відкриття воріт потрібно лише скористатися ключем, що
                   входить в комплект. Тому навіть без електрики ви встигнете на
                   бізнес-зустріч відкривши ворота вручну.
@@ -94,7 +97,11 @@ export default function Automatic() {
               </div>
             </div>
             <div className="media-wrapper">
-              <img className="picture" src="/img/automatic-versatility.png" />
+              <img
+                className="picture"
+                src="/img/automatic-versatility.png"
+                style={{ width: "700px" }}
+              />
             </div>
             <div className="auto-versatility-typography-wrapper">
               <p className="description ultra-small">
@@ -103,21 +110,21 @@ export default function Automatic() {
               </p>
             </div>
           </div>
-          <div className="product-features-block durability">
+          <div className="product-features-block">
             <div className="wrapper inline-wide">
-              <p className="product-features-eyebrow">Довговічність</p>
+              <p className="product-features-eyebrow">Надійність</p>
               <h1 className="headline average">
                 Автоматика, яка буде останньою...
               </h1>
-              <div className="img-wrapper">
-                <div className="scale-pool">
-                  <img className="img" src="/img/automat-roteo-front.png" />
+              <div className="media-wrapper">
+                <div className="media-item-wrapper">
+                  <img className="picture" src="/img/automat-roteo-front.png" />
                 </div>
-                <div className="scale-pool">
-                  <img className="img" src="/img/automat-roteo-side.png" />
+                <div className="media-item-wrapper">
+                  <img className="picture" src="/img/automat-roteo-side.png" />
                 </div>
               </div>
-              <p className="description medium float-left">
+              <p className="description medium typography-mt">
                 Конструкції виготовлені зі сталі, служать довгий час навіть при
                 дії навколишнього середовища. А потужні двигуни, створенІ таким
                 чином, щоб витримувати щоденне навантаження, розраховані на
@@ -127,26 +134,7 @@ export default function Automatic() {
           </div>
         </section>
 
-        <section className="installation-container">
-          <div className="installation-img-container">
-            <figure className="installation-img"></figure>
-          </div>
-          <div className="wrapper inline-narrow float-right">
-            <h1 className="headline average">
-              Ви завжди отримаєте лише якісний монтаж.
-            </h1>
-            <p className="description great">
-              Співробітники наших сервісних центрів отримують знання та досвід,
-              проходячи через велику кількість навчальних проектів.
-            </p>
-            <Link className="second-link medium white" href="/conversation">
-              Замовити ремонт
-              <span className="material-symbols-outlined normall">
-                chevron_right
-              </span>
-            </Link>
-          </div>
-        </section>
+        <Installation />
       </main>
     </>
   );

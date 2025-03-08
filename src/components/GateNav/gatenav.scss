@@ -3,9 +3,7 @@
     z-index: 888;
     background-color: rgba(255, 255, 255, .77);
     width: 100%;
-    height: fit-content;
-    padding: 24px 68px 32px;
-    box-sizing: border-box;
+    padding: 24px 48px 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,48 +17,61 @@
         gap: 65px;
     }
 
-
-    .gate-nav-btn {
-        text-decoration: none;
-        color: var(--r-main-txt-light-theme-color);
-
-        &:active {
-            opacity: .44;
-            transition: opacity .1s ease;
+    .product-nav-btn {
+        @media (hover: hover) {
+            &:hover {
+                .icon-wrapper {
+                    border: 1px solid var(--r-main-link-color);
+                    -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 113, 227, 0.4); 
+                    box-shadow: 0px 0px 0px 4px rgba(0, 113, 227, 0.4);
+                }
+            }
+        }
+    
+        @media (hover: none) {
+            &:active {
+                .icon-wrapper {
+                    border: 1px solid var(--r-main-link-color);
+                    -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 113, 227, 0.4); 
+                    box-shadow: 0px 0px 0px 4px rgba(0, 113, 227, 0.4);
+                }
+            }
         }
     }
 
-    .gate-nav-icon-wrapper {
-        display: flex;
-        flex-direction: column;
+    .content-wrapper {
+        &.garage-icon {
+            .icon {
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        &.sliding-icon {
+            .icon {
+                width: 60%;
+                height: 60%;
+            }    
+        }
+    }
+
+    .icon-wrapper {
         align-items: center;
-        width: fit-content;
-        height: fit-content;
-        transform: translateX(30px);
+        border-radius: 50%;
+        display: flex;
+        height: 70px;
+        justify-content: center;
+        width: 70px;
+        border: 1px solid var(--r-main-calm-border-color);
 
-        &.checked {
-
-        }
-
-        &:nth-child(1) {
-            animation: autoFadeIn .3s ease both, manualMoveIn .3s ease forwards;
-        }
-
-        &:nth-child(2) {
-            animation: autoFadeIn .3s ease .05s both, manualMoveIn .3s ease .05s forwards;
-        }
-
-        &:nth-child(3) {
-            animation: autoFadeIn .3s ease .1s both, manualMoveIn .3s ease .1s forwards;
+        .icon {
+            object-fit: cover;
+            height: 70%;
+            width: 70%;
         }
     }
 
-    .gate-nav-icon {
-        width: var(--r-nav-height);
-        height: auto;
-    }
-
-    .gate-nav-text {
+    .chapter {
         display: flex;
         flex-direction: column;
         font-size: 13px;
